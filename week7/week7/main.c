@@ -7,14 +7,14 @@
 
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    int flag =1;
-    while(flag !=0)
-    {
-        int y;
-        y =3;
-        flag = 0;
-        y=4;
+int main(void) {
+    
+    int i;
+    int temp = 1;
+    for (i=0; i<5; i++){
+        printf("temp = %d\n", temp);
+        temp++;
     }
+    
     return 0;
 }
