@@ -7,14 +7,19 @@
 
 #include <stdio.h>
 
+int inc(int counter);
+
 int main(void) {
     
-    int i;
-    int temp = 1;
-    for (i=0; i<5; i++){
-        printf("temp = %d\n", temp);
-        temp++;
-    }
-    
+    int i = 0;
+    printf("함수 호출 전 i = %d\n",i);
+    i= inc(i);
+    printf("함수 호출 후 i = %d\n",i);
     return 0;
+}
+
+int inc(int counter)
+{
+    counter++;
+    return counter; //반환값을 이용해서 외부에서 사용
 }
